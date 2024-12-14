@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 3D - Columna Entrada Academia</title>
+    <!-- Importar la fuente Titillium Web desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.x3dom.org/download/x3dom.js"></script>
+    <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css">
+    <style>
+        body {
+            font-family: 'Titillium Web', sans-serif; /* Aplicar Titillium Web */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #F4A019; /* Fondo naranja */
+            text-align: center;
+            color: #ffffff; /* Texto blanco */
+        }
+
+        header {
+            margin-bottom: 0; /* Sin espacio entre el header y el objeto */
+        }
+
+        h1 {
+            font-weight: 600; /* Peso más grueso para el título */
+            font-size: 2em;
+            margin: 0;
+        }
+
+        p {
+            font-weight: 400; /* Peso regular para los párrafos */
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        x3d {
+            background-color: #ffffff; /* Fondo blanco del objeto */
+            border: 1px solid #ccc; /* Borde gris claro */
+            margin: 0; /* Sin espacio entre el objeto y los textos */
+        }
+
+        footer {
+            margin-top: 0; /* Sin espacio entre el objeto y el pie de página */
+            font-size: 0.9em;
+            color: #fff; /* Color del texto del pie de página */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Columna Entrada Academia</h1>
+        <p>Módulo 2 - Tema 5 Práctica</p>
+    </header>
+    
+    <x3d width="800px" height="800px">
+        <scene>
+            <Viewpoint 
+                position="-9.30059 -4.87463 -3.57949" 
+                orientation="0.68906 -0.45015 -0.56794 1.76679"
+                centerOfRotation="-1.11171 -1.21565 -6.26130"
+                fieldOfView="0.78540"
+                description="defaultX3DViewpointNode">
+            </Viewpoint>
+            <inline url="https://raw.githubusercontent.com/GASPARIRLES/MODELO-1/refs/heads/main/columna.x3d"></inline>
+        </scene>
+    </x3d>
+
+    <footer>
+        <p>Por Gaspar Irles Domenech</p>
+    </footer>
+</body>
+</html>
